@@ -1,0 +1,205 @@
+:root{
+  --primary-color: #3A393E;
+  --secondary-color: #FF6D33;
+  --main-backgroun: #FFF7F5;
+  --fs-biggest: 80px;
+  --fs-bigear: 52px;
+  --fs-big: 30px;
+  --fs-logo: 29px;
+  --fs-product-sub-title: 24px;
+  --fs-bigest-medium: 22px;
+  --fs-big-medium: 20px;
+  --fs-medium: 18px;
+  --fs-big-small: 16px;
+  --fs-small: 11px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  .logo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    h3{
+      font-size: var(--fs-logo);
+    }
+    p{
+      font-size: var(--fs-small);
+      text-transform: uppercase;
+    }
+  }
+}
+.root{
+  header{
+    padding: 34px 0px;
+    background-color: var(--main-backgroun);
+    .header-content{
+      max-width: 1570px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .nav-and-action{
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        nav{
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          .link{
+            a{
+              text-decoration: none;
+              color: var(--primary-color);
+              font-size: var(--fs-medium);
+            }
+          }
+          .link:hover{
+            transform: scale(1.05);
+            transition: .3s ease;
+          }
+          .link:hover a{
+            color: var(--secondary-color);
+            transition: .3s ease;
+          }
+        }
+        .action{
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          i{
+            padding: 28px 31px;
+            color: #5a5959;
+            transform: scale(1.6);
+          }
+          i:hover{
+            color: var(--secondary-color);
+            transform: scale(1.7);
+          }
+          button{
+            width: 129px;
+            border-radius: 2px;
+            height: 44px;
+            font-size: var(--fs-big-medium);
+          }
+          button:hover{
+            transition: .3s ease;
+            border-radius: 5px;
+          }
+        }
+      }
+
+    }
+  }
+  footer{
+    padding-top: 30px;
+    background-color: var(--main-backgroun);
+
+    .footer-content{
+      padding: 30px 0px;
+      max-width: 1570px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .main-column{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 46px;
+        max-width: 264px;
+        section{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+        }
+        .main-column-icons-container{
+          display: flex;
+          align-items: center;
+          gap: 50px;
+          i{
+            cursor: pointer;
+            transform: scale(1.5);
+          }
+          i:hover{
+            transition: .3s ease;
+            transform: scale(1.6);
+            color: var(--secondary-color);
+          }
+        }
+        p{
+          color: var(--primary-color);
+          font-size: var(--fs-big-small);
+        }
+      }
+      .nav-columns-container{
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        .links-column{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          h4{
+            font-size: var(--fs-product-sub-title);
+            color: var(--primary-color);
+          }
+          ul{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            list-style: none;
+            a{
+              text-decoration: none;
+              font-size: var(--fs-big-small);
+              color: var(--primary-color);
+              cursor: pointer;
+            }
+            li:hover{
+              transform: scale(1.05);
+              transition: .3s ease;
+            }
+            a:hover{
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
+      .instagram-column{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h4{
+          font-size: var(--fs-product-sub-title);
+          color: var(--primary-color);
+        }
+        .instagram-images-container{
+          width: 636px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 24px;
+        }
+      }
+    }
+    .copyright{
+      padding: 20px 0px;
+      border-top: 2px solid #3a393e38;
+      p{
+        color: var(--primary-color);
+        font-size: var(--fs-small);
+        text-align: center;
+
+      }
+    }
+  }
+}
