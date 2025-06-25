@@ -263,7 +263,17 @@
   footer{
     padding-top: 30px;
     background-color: var(--main-backgroun);
-
+    position: relative;
+    .virus1{
+      position: absolute;
+      bottom: 280px;
+      left: -70px;
+    }
+    .virus2{
+      position: absolute;
+      bottom: 10px;
+      left: 300px;
+    }
     .footer-content{
       padding: 30px 0px;
       max-width: 1570px;

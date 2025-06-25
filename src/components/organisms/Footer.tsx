@@ -3,6 +3,7 @@ import NavLink from "../atoms/NavLink"
 import Image from "../atoms/Image"
 import Icon from "../atoms/Icon"
 import SiteLogo from "../molecules/SiteLogo"
+import Virus from '../../assets/images/Footer/virus.png'
 import Img1 from '../../assets/images/Footer/1.png'
 import Img2 from '../../assets/images/Footer/2.png'
 import Img3 from '../../assets/images/Footer/3.png'
@@ -82,6 +83,8 @@ const Footer = () => {
             <div className="copyright">
                 <Text tag='p' text='© Copyright, Company, 2020'/>
             </div>
+            <img src={Virus} alt=""  className="virus1"/>
+            <img src={Virus} alt=""  className="virus2"/>
         </footer>
     )
 }
