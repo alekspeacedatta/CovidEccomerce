@@ -100,71 +100,54 @@
     }
   }
   main{
-    padding: 100px;
-    .products-container{
+    .main-content{
       max-width: 1570px;
       margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 25px;
-      .product{
+      flex-direction: column;
+      .collection-products-container{
+        padding: 100px 0px ;
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 402px;
-        height: 455px;
-        .product-image{
+        justify-content: space-between;
+
+        .collection-product{
+          background-color: #FCF0E7;
+          width: 502px;
+          height: 334px;
           position: relative;
-          background-color: #F5F5F5;
           display: flex;
-          align-items: center;
           justify-content: center;
-          padding: 20px;
-          .discount{
-            position: absolute;
-            background-color: var(--secondary-color);
-            color: white;
-            width: 53px;
-            height: 74px;
+          align-items: center;          
+          .collection-product-text{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 12px;
-          }
-        }
-        .product-text{
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          h4{
-            font-size: var(--fs-product-sub-title);
-            color: var(--primary-color);
-          }
-          section{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            p{
-              font-size: var(--fs-product-sub-title);
-              color: var(--secondary-color);
-              font-weight: bolder;
-              span{
-                margin-left: 20px;
+            align-items: flex-start;
+            gap: 48px;
+            width: 90%;
+            section{
+              width: 275px;
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              h3{
+                font-size: var(--fs-big);
                 color: var(--primary-color);
-                opacity: 0.3;
-                font-weight: normal;
-                text-decoration: line-through;
+              }
+              span{
+                font-size: var(--fs-bigest-medium);
+                color: var(--primary-color)
               }
             }
-            .stars-container{
-              .star{
-    
-              }
+            button{
+              width: 167px;
+              height: 64px;
+              font-size: var(--fs-big-medium);
             }
+          }
+          img{
+            position: absolute;
+            left: 160px;
+            bottom: -10px;        
           }
         }
       }

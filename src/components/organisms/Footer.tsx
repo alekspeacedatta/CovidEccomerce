@@ -1,5 +1,4 @@
 import Text from "../atoms/Text"
-import Button from "../atoms/Button"
 import NavLink from "../atoms/NavLink"
 import Image from "../atoms/Image"
 import Icon from "../atoms/Icon"

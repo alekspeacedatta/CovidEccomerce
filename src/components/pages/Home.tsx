@@ -1,23 +1,15 @@
 import Header from "../organisms/Header"
+import Collections from "../organisms/Collections"
 import Footer from "../organisms/Footer"
-import Product from "../molecules/Product"
 const Home = () => {
     return (
         <>
             <Header/>
-
-            <main>
-                <div className="products-container">
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                </div>
-            </main>
-
+                <main>
+                    <div className="main-content">
+                        <Collections/>
+                    </div>
+                </main>
             <Footer/>
         </>
     )
