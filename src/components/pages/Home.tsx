@@ -2,6 +2,7 @@ import Header from "../organisms/Header"
 import Collections from "../organisms/Collections"
 import Footer from "../organisms/Footer"
 import FeaturedProducts from "../organisms/FeaturedProducts"
+import BigOffer from "../organisms/BigOffer"
 const Home = () => {
     return (
         <>
@@ -10,6 +11,7 @@ const Home = () => {
                     <div className="main-content">
                         <Collections/>
                         <FeaturedProducts/>
+                        <BigOffer/>
                     </div>
                 </main>
             <Footer/>

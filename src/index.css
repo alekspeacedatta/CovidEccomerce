@@ -14,6 +14,7 @@
   --fs-small: 11px;
 }
 *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -101,15 +102,15 @@
   }
   main{
     .main-content{
-      max-width: 1570px;
-      margin: 0 auto;
+      
       display: flex;
       flex-direction: column;
       .collection-products-container{
         padding: 50px 0px ;
         display: flex;
         justify-content: space-between;
-
+        max-width: 1570px;
+        margin: 0 auto;
         .collection-product{
           background-color: #FCF0E7;
           width: 502px;
@@ -175,6 +176,8 @@
           }
         }
         .featured-products-content{
+          max-width: 1570px;
+          margin: 0 auto;
           .products-container{
             max-width: 1570px;
             margin: 0 auto;
@@ -258,10 +261,74 @@
           font-size: var(--fs-big-medium);
         }
       }
+      .big-offer{
+        height: 702px;
+        position: relative;
+        max-width: 1580px;
+        background-color: var(--main-backgroun);
+        .big-offer-content{  
+          display: flex;
+          align-items: center;
+          height: 682px;
+          max-width: 1225px;
+          margin: 0 auto;
+          .product{
+            position: absolute;
+            right: 125px;
+          }
+          .big-offer-text{
+            width: 623px;
+            display: flex;
+            flex-direction: column;
+            gap: 57px;
+            .head{
+              display: flex;
+              flex-direction: column;
+              gap: 33px;
+              section{
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+                p{
+                  font-size: var(--fs-bigest-medium);
+                  color: var(--primary-color);
+                }
+                h2{
+                  font-size: 50px;
+                  color: var(--primary-color);
+                }
+              }
+              p{
+                color: var(--primary-color);
+                font-size: var(--fs-bigest-medium);
+              }
+            }
+            .foot{
+              display: flex;
+              align-items: center;
+              gap: 28px;
+              button{
+                width: 160px;
+                height: 65px;
+                font-size: var(--fs-big-medium);
+              }
+              p{
+                color: var(--primary-color);
+                font-size: var(--fs-bigest-medium);
+              }
+            }
+          }
+        }
+        .woman{
+          position: absolute;
+          right: -230px;
+          top: 0;
+        }
+      }
     }
   }
   footer{
-    padding-top: 30px;
+    margin-top: 100px;
     background-color: var(--main-backgroun);
     position: relative;
     .virus1{
