@@ -1,25 +1,35 @@
 import Text from "../atoms/Text"
 import Image from "../atoms/Image"
-import ProductImage from '../../assets/images/Product/Img - mask.png'
-import Stars from '../../assets/images/Product/Rating.png'
-const Product = () => {
+interface ProductProps {
+    product: {
+        imageSrc: string,
+        discount: string,
+        discountText: string,
+        titleTag: string,
+        titleText: string,
+        newPrice: string,
+        oldPrice: string,
+        starImg: string,
+    }
+}
+const Product = ({product}: ProductProps) => {
     return (
         <div className="product">
             <div className="product-image">
-                <Image src={ProductImage}/>
+                <Image src={product.imageSrc}/>
                 <div className="discount">
                     <span>
-                        20% 
+                        {product.discount}
                     </span>
-                    <p>OFF</p>
+                    <p>{product.discountText}</p>
                 </div>                    
             </div>
             <div className="product-text">
-                <Text tag='h4' text='Customized Reusable Face Mask'/>
+                <Text tag={product.titleTag} text={product.titleText} />
                 <section>
-                    <p>$20.00 <span>$4.00</span></p>
+                    <p>{product.newPrice} <span> {product.oldPrice} </span></p>
                     <div className="stars-container">
-                        <Image src={Stars} />
+                        <Image src={product.starImg} />
                     </div>
                 </section>
             </div>
